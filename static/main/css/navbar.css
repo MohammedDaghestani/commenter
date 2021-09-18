@@ -1,0 +1,103 @@
+.navbar-menu{
+    position: fixed;
+    /* top: 0; */
+    height: 3.5rem;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    /* width: 100%; */
+    /* padding: 1rem 8rem 0 8rem; */
+    /* background-color: rgb(252, 252, 252); */
+    transition: all .5s ease-in-out;
+}
+.nav-open{
+    height: max-content;   
+}
+/* .separetor{
+    margin: .5rem .5rem 0 .5rem;
+    height: 1.5rem;
+    width: .08rem;
+    background: rgb(211, 211, 211);
+} */
+/* .separeetor-ver{
+    margin-top: .4rem;
+    color: rgb(190, 190, 190);
+} */
+/* .navbar-menu-brand{
+    float: left;
+    font-size: 1.4rem;
+    text-decoration: none;
+} */
+/* .navbar-menu-items{
+    float: right;
+} */
+/* .navbar-menu-items ul{
+    list-style: none;
+} */
+/* .navbar-menu-items li{
+    display: inline-block;
+} */
+/* .navbar-menu-item{
+    padding: .8rem .3rem  0 .3rem;
+} */
+/* .navbar-menu-item a{
+    color: rgb(131, 131, 131);
+    text-decoration: none;
+} */
+/* .active{
+    font-weight: 650;
+} */
+.nav-toggler{
+    padding-top: .5rem;
+    width: 1.5rem;
+    height: 1.3rem;
+    display: none;
+    cursor: pointer;
+}
+.nav-toggler-item,
+.nav-toggler-item::before,
+.nav-toggler-item::after{
+    border-radius: 2px;
+    width:1.4rem;
+    height: 2px;
+    background: black;
+    transition: all .2s ease-in-out;
+}
+.nav-toggler-item::before,
+.nav-toggler-item::after{
+    content: '';
+    position: absolute;
+}
+.nav-toggler-item::before{
+    transform: translateY(-.4rem);
+}
+.nav-toggler-item::after{
+    transform: translateY(.4rem);
+}
+
+.nav-toggler.open .nav-toggler-item{
+    transform: translateX(-1rem);
+    background: transparent;
+}
+.nav-toggler.open .nav-toggler-item::before{
+    transform: rotate(45deg) translate(.5rem, -.5rem);
+}
+
+.nav-toggler.open .nav-toggler-item::after{
+    transform:  rotate(-45deg) translate(.5rem, .5rem);
+}
+
+@media (max-width: 767px){
+    .nav-toggler{
+        display: block;
+    }
+    .navbar-menu{
+        height:max-content;
+    }    
+    .lang{
+        display: inline-block;
+    }
+}
+@media (max-width: 991px){
+    .navbar-nav{
+        margin-top: .5rem;
+    }
+}

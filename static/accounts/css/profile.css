@@ -1,0 +1,157 @@
+
+.profile-pic{
+    border: 10px solid whitesmoke;
+    border-radius: 15rem;    
+    width: 12em;
+    height: 12rem;
+    background-color: rgb(209, 209, 209);
+    margin: auto;
+    margin-top: -4rem;
+}
+
+.profile-pic img{
+    border-radius: 15rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-pic i{
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.9rem;
+    font-size: 8rem;
+    color: white;
+    
+}
+.profile-text{
+    color: var(--main-color-black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+aside{
+    align-self: flex-start;
+    top: 7rem;
+    /* padding-top: 7rem; */
+    margin-bottom: 3rem;
+}
+
+#change-pic,
+#delete-pic,
+#change-name .submit, 
+.cancel,
+#change-password .submit{
+    font-size: 1rem;
+    /* margin-bottom: .5rem; */
+    border: 0;
+    border-radius: .2rem;
+    padding: .4rem;
+    width: 8.2rem;
+    transition: all .3s ease-in-out;
+}
+#delete-pic,
+.cancel{
+    border: 1px solid var(--main-color-black);
+}
+#delete-pic a,
+.cancel a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+#delete-pic:hover,
+.cancel:hover{
+    background-color: var(--main-color-orange);
+    /* color: white; */
+}
+
+#delete-pic:hover a,
+.cancel:hover a{
+    /* background-color: var(--main-color-orange); */
+    color: white;
+}
+
+#change-pic,
+#change-name .submit,
+#change-password .submit{
+    background-color: var(--main-color-black);
+    color: white;
+}
+#change-pic:hover,
+#change-name .submit:hover,
+#change-password .submit:hover{
+    background-color: var(--main-color-orange);
+    
+}
+.profile-info{
+    color: var(--main-color-black);
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.profile-email{
+    /* margin-top: .2rem; */
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+.profile-change-password{
+    /* margin-top: .5rem; */
+    font-size: .95rem;
+}
+.profile-email a,
+.profile-change-password a{
+    text-decoration: none;
+    color: var(--main-color-black);
+    transition: color .3s ease-in-out;
+}
+.profile-email a:hover,
+.profile-change-password a:hover{
+    color: var(--main-color-orange);
+}
+.card{
+    max-width: 25rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+#change-img{
+    display: none;
+}
+#upload-btn{
+    display: none;
+}
+
+.fa-pen{
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.fa-pen:hover{
+    color: var(--main-color-orange);
+    transform: scale(1.05);
+}
+.profile-name input,
+input[type='password']{
+    /* height: 1.7rem; */
+    width: 11rem;
+    margin-left: .2rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    height: 2.8rem;
+    border: 2px solid #3f3d56;
+    padding: 1rem;
+}
+input[type='password']{
+    width: 18rem;
+}
+#change-name .submit{
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 440px){
+    .profile-name input{
+        width: 17rem;
+        
+    }
+}
