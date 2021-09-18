@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4r2i!%%07l#g4v15$4-mx+w^!qj^6fq8@9a1rfop25%v*e$sa^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['commenter.pythonanywhere.com', '127.0.0.1']
 
 AUTH_USER_MODEL = 'accounts.User'
 
